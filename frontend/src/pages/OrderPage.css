@@ -1,0 +1,53 @@
+.order-panel.form-panel {
+  max-width: 620px;
+}
+
+.order-panel > h1 {
+  margin-bottom: 6px;
+}
+
+.order-panel > .muted {
+  margin-bottom: 20px;
+}
+
+.order-product-summary,
+.order-credit-summary {
+  align-items: center;
+  background: var(--color-cream-light);
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 14px;
+}
+
+.order-product-summary strong {
+  color: var(--color-coffee-deep);
+  flex: 1 1 180px;
+}
+
+.order-credit-summary {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  margin-top: 12px;
+}
+
+.order-subscription-needed {
+  margin: 12px 0 18px;
+}
+
+.order-subscription-needed .notice {
+  margin-bottom: 12px;
+}
+
+.order-panel form {
+  margin-top: 18px;
+}
+
+.order-panel form button {
+  width: 100%;
+}

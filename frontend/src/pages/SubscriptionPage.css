@@ -1,0 +1,120 @@
+.current-plan h2 {
+  margin-bottom: 14px;
+}
+
+.subscription-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 36px;
+  margin-bottom: 16px;
+}
+
+.subscription-details p {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 0;
+}
+
+.subscription-current-badge {
+  background: var(--color-border-warm);
+  border-radius: 999px;
+  color: var(--color-coffee);
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-self: start;
+  padding: 5px 10px;
+}
+
+.plan-card ul {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.plan-card li::before {
+  color: var(--color-success);
+  content: '✓';
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.plan-card .subscription-price {
+  color: var(--color-coffee);
+  font-size: 1.1rem;
+}
+
+.plan-card button {
+  justify-self: stretch;
+  width: 100%;
+}
+
+.plan-card button:disabled {
+  cursor: not-allowed;
+}
+
+.subscription-dialog {
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  color: var(--color-ink);
+  max-width: 460px;
+  padding: 26px;
+  width: calc(100% - 32px);
+}
+
+.subscription-dialog::backdrop {
+  background: var(--color-backdrop);
+  backdrop-filter: blur(2px);
+}
+
+.subscription-dialog h2,
+.subscription-dialog p {
+  margin-bottom: 0;
+}
+
+.subscription-dialog-header {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.subscription-dialog-header h2 {
+  margin-bottom: 4px;
+}
+
+.subscription-dialog-close {
+  font-size: 1.35rem;
+  min-height: 36px;
+  padding: 0;
+  width: 36px;
+}
+
+.subscription-dialog .form-stack {
+  gap: 12px;
+}
+
+.subscription-card-note {
+  font-size: 0.9rem;
+  margin-top: -6px;
+}
+
+.subscription-failure-note {
+  font-size: 0.82rem;
+}
+
+.subscription-dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+@media (max-width: 760px) {
+  .subscription-dialog {
+    padding: 22px;
+  }
+}

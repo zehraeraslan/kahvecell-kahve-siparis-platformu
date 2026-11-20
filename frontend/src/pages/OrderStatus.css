@@ -1,0 +1,102 @@
+.order-status-badge {
+  border-radius: 999px;
+  display: inline-flex;
+  font-weight: 650;
+  justify-content: center;
+  padding: 8px 14px;
+  transition:
+    background-color 250ms ease,
+    color 250ms ease,
+    transform 250ms ease;
+}
+
+.order-status-badge.is-pending {
+  background: #fff3d4;
+  color: #825400;
+}
+
+.order-status-badge.is-accepted {
+  background: #e7f0ff;
+  color: #28559a;
+}
+
+.order-status-badge.is-preparing {
+  background: #fff0df;
+  color: #9a4c10;
+}
+
+.order-status-badge.is-ready {
+  background: #e6f4e8;
+  color: #286333;
+}
+
+.order-status-badge.is-delivered {
+  background: #dcefe9;
+  color: #1d5e4d;
+}
+
+.qr-status-badge {
+  animation: status-pop 300ms ease;
+  font-size: 1.05rem;
+  min-width: 150px;
+}
+
+.qr-panel .qr-code svg {
+  display: block;
+  height: auto;
+  max-width: min(280px, 72vw);
+  width: 100%;
+}
+
+.qr-status-block {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.qr-status-block p {
+  margin-bottom: 0;
+}
+
+.order-complete {
+  align-items: center;
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  padding: 24px 12px;
+  text-align: center;
+}
+
+.order-complete h1 {
+  margin: 0;
+}
+
+.order-complete p {
+  margin: 0;
+}
+
+.order-history-table .order-status-badge {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@keyframes status-pop {
+  0% {
+    transform: scale(0.94);
+  }
+
+  65% {
+    transform: scale(1.04);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .order-status-badge {
+    animation: none;
+    transition: none;
+  }
+}
